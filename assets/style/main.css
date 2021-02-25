@@ -1,0 +1,590 @@
+:root{
+    --color-prncipal:#0B5B67;
+    --color-secundarion:#E89292;
+    --color-resaltado-principal:#c75858;
+    --corlor-resaltad-secundario:#FBDD8E;
+    --color-texto: #4a473f;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    background: #efefef;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header{
+    background: #FFFFFF;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.main-header__title{
+    margin: 0;
+    color: var(--color-texto);
+}
+
+.main-header__menu{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-header__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__link{
+    display: block;
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px;
+
+
+}
+
+/*principal */
+
+.main-content__background{
+    background: url("../images/banner.webp");
+   /* background-repeat: no-repeat;*/
+   background-repeat: none;
+   background-size: cover;
+
+}
+
+.main-content__card{
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+
+.main-content__photo{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.main-content__socialmedia{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+.main-content__sociallinks{
+    width: 35px;
+    height: 35px;
+
+}
+
+.main-content__contact{
+    margin-left: 50px;
+}
+
+.main-content__name{
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.main-content__description{
+    margin: 0;
+
+}
+
+.main-content__link--secundario, .main-content__link--principal{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.main-content__buttons{
+    display: flex;
+}
+
+.main-content__link--secundario{
+    background: var(--color-secundarion);
+}
+
+.main-content__link--principal{
+    background-color: var(--color-prncipal);
+}
+
+.main-content__list span:first-child{
+    font-weight: bold;
+    width: 100px;
+}
+
+.main-content__list span{
+    display: block;
+}
+
+.main-content__list{
+    display: flex;
+}
+
+/* formato habolidades*/
+
+.skills{
+    margin-top: 150px;
+}
+
+.skills__cards{
+    display: flex;
+}
+
+.skill__tech, .skill__soft{
+    background: white;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.skill__tech{
+    margin-right: 4%;
+}
+
+.skill__par span{
+    display: block;
+    background-color: #cfcfcf;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.skill__photo::before{
+    content: '';
+    width: 80%;
+    height: 8px;
+    background-color: var(--color-prncipal);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__photo::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-resaltado-principal);
+    position: absolute;
+    left: calc(80% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.skill__light::before{
+    content: '';
+    width: 85%;
+    height: 8px;
+    background-color: var(--color-secundarion);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__light::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-resaltado-principal);
+    position: absolute;
+    left: calc(85% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.skill__editing::before{
+    content: '';
+    width: 90%;
+    height: 8px;
+    background-color: var(--corlor-resaltad-secundario);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__editing::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-secundarion);
+    position: absolute;
+    left: calc(90% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.skill__ctc::before{
+    content: '';
+    width: 75%;
+    height: 8px;
+    background-color: var(--color-prncipal);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__ctc::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-secundarion);
+    position: absolute;
+    left: calc(75% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.skill__team::before{
+    content: '';
+    width: 90%;
+    height: 8px;
+    background-color: var(--color-secundarion);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__team::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--corlor-resaltad-secundario);
+    position: absolute;
+    left: calc(90% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+.skill__pro::before{
+    content: '';
+    width: 75%;
+    height: 8px;
+    background-color: var(--color-resaltado-principal);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.skill__pro::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: var(--corlor-resaltad-secundario);
+    position: absolute;
+    left: calc(75% - 6px);
+    top: -2px;
+    display: block;
+    border-radius: 50%;
+
+}
+
+.skill__title{
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--color-texto);
+
+}
+
+.skill__par{
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+/*tarjeta*/
+
+.do__cards{
+    display: flex;
+    justify-content: space-between;
+}
+.do__card{
+    background-color: white;
+    width: 23%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: var(--color-texto)
+}
+
+.do__icon{
+    width: 40px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.do__card-title, .do__par{
+    text-align: left;
+    margin: 0;
+}
+.do__card-title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.do__title{
+    text-align: center;
+}
+
+.do{
+    margin-top: 50px;
+}
+
+/*portafolio*/
+
+.portfolio__cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.portfolio__card{
+    max-width: 32%;
+    margin-bottom: 15px;
+}
+
+.portfolio__card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio{
+    margin-top: 50px;
+}
+
+.portfolio__title{
+    text-align: center;
+    color: var(--color-texto);
+}
+
+/*interese*/
+
+.intereses__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intereses__card{
+    background-color: white;
+    width: 15%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.intereses__card img{
+    width: 40px;
+    margin: 5px auto;
+}
+
+.intereses__card p{
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--color-texto);
+}
+
+.intereses__title{
+    color: var(--color-texto);
+    text-align: center;
+}
+
+.intereses{
+    margin-top: 50px;
+}
+
+/*  footer */
+
+.footer{
+    background: var(--color-principal);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer__text{
+    color: white;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Responsive d */
+@media screen and (max-width: 680px){
+    body{
+        background-color: rgb(214, 150, 171);
+    }
+    #burgermenu{
+        display: block;
+        appearance: none;
+        width: 50px;
+        height: 50px;
+        background: url(../images/menu_hamburguesa.png);
+        background-size: cover;
+        outline: none;
+    }
+    .main-header__nav{
+        display: none;
+        position: absolute;
+        left: -15px;
+        top: 100%;
+        background-color: white;
+        z-index: 1000;
+        width: 50vw;
+        height: calc(100vh - 100%);
+    }
+    .main-header__principal{
+        flex-flow: row-reverse;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 100;
+    }
+    .main-header__menu{
+        display: block;
+    }
+    #burgermenu:checked ~ .main-header__nav{
+        display: block;
+    }
+    /*movil*/
+
+    .main-content__card{
+        flex-flow: column;
+        align-items: center;
+    }
+    .main-content__contact{
+        margin-left: 0;
+    }
+
+    .main-content__name{
+        text-align: center;
+    }
+
+    .main-content__description{
+        text-align: center;
+    }
+
+    .main-content__buttons{
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .main-content__list{
+        display: block;
+        text-align: center;
+        margin: 8px 0 0;
+    }
+
+    .main-content__list span:first-child{
+        font-weight: bold;
+        width: 100%;
+    }
+    
+    /*skills*/
+
+    .skills__cards{
+        flex-flow: column;
+    }
+
+    .skill__tech{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .skill__tech, .skill__soft{
+        width: 100%;
+    }
+
+    /*que hago*/
+
+    .do__cards{
+        flex-flow: row wrap;
+    }
+
+    .do__card{
+        width: 48%;
+        margin-bottom: 15px;
+
+    }
+    /*portafoli*/
+
+    .portfolio__cards{
+        flex-flow: row wrap;
+
+    }
+    .portfolio__card{
+      width: 49%;
+      max-width: 49%;
+    }
+
+    .portfolio__card img{
+        width: 100%;
+    }
+/*intereses*/
+
+.intereses__cards{
+    flex-flow: row wrap;
+
+}
+
+.intereses__card{
+    width: 32%;
+    margin-bottom: 10px;
+}
+    
+
+}
+
+
